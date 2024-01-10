@@ -1,0 +1,67 @@
+</tr><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*복합 선택자: 여러 개의 요소를 한 번에 지정*/
+        table , tr , td , th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            /*상하 좌우 모두 10px의 여백*/
+            padding: 10px;
+
+        }
+        td{
+            text-align: center;  /* 글자를 중앙으로 정렬*/
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                항목1
+            </th>
+            <th>
+                항목2
+            </th>
+            <th>
+                항목3
+            </th>
+            <th>
+                항목4
+            </th>
+        </tr>
+         <tr> <!--한줄 추가 -->
+        <td> <!-- 한칸 추가 -->
+            html
+        </td>
+        <td>
+            css
+        </td>
+        <td>
+            javascript
+        </td>
+        <td rowspan="2"> <!--위아래 1칸 이상의 칸을 합칠때 -->
+            vs code
+        </td>
+        </tr>
+        <tr>
+            <td>
+                java
+            </td>
+            <td colspan="2"> <!--양옆 1칸이상의 칸을 합칠때 -->
+                database
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="../images/구글이미지.png" width="50" height="30" alt="">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
